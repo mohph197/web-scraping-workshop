@@ -85,12 +85,6 @@
 				}
 			});
 		</script>
-		<!-- <script>
-			setTimeout(function () {
-				$('#downloadButton').removeClass('hidden');
-				$('h3').text('Click the button to start the download');
-			}, 1000);
-		</script> -->
 		<style>
 			body {
 				height: 100vh;
@@ -98,6 +92,7 @@
 				justify-content: center;
 				align-items: center;
 				font-family: sans-serif;
+				margin: 0;
 			}
 
 			h3 {
@@ -116,16 +111,6 @@
 			.ui-dialog-titlebar-close {
 				display: none;
 			}
-
-			/* #downloadButton.hidden {
-				display: none;
-			}
-
-			#downloadColumn {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-			} */
 		</style>
 	</head>
 	<body>
@@ -134,7 +119,6 @@
 			<div id="progressbar"></div>
 		</div>
 		<div id="downloadColumn">
-			<!-- <h3>Loading...</h3> -->
 			<button id="downloadButton" class="hidden">Start Download</button>
 		</div>
 	</body>
